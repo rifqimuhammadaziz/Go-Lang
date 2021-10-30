@@ -6,6 +6,7 @@ import (
 
 func main() {
 	hitungDeret()
+	loopNumber()
 }
 
 func hitungDeret() {
@@ -15,4 +16,18 @@ func hitungDeret() {
 	}
 	
 	fmt.Println("Hasil jumlah deret angka sampai n:", total)
+}
+
+// Loop function
+func loopNumber() {
+	// Looping 0 until <4 (5x)
+	for i := 0; i < 5; i++ {
+		fmt.Println("Loop angka ke - ", i)
+	}
+	// OR
+	// i := 0
+	// for i < 5 {
+	// 	fmt.Println("Loop angka ke - ", i)
+	// 	i++
+	// }
 }
