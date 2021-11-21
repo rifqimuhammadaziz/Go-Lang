@@ -7,6 +7,14 @@ import (
 func main() {
 	trafficLamp("blue")
 	payDebt(300,300)
+
+	// Short statement
+	name := "Rifqi"
+	if length := len(name); length > 5 {
+		fmt.Println("Nama terlalu panjang")
+	} else {
+		fmt.Println("Nama sudah benar")
+	}
 }
 
 func trafficLamp(color string) {
