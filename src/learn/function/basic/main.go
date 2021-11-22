@@ -4,13 +4,18 @@ import (
 	"fmt" // print to console
 )
 
-
-var namaOrtu string // variable kosong
+// global variable
+var namaOrtu string
 var text = "This is global variable"
 
 func main() {
-	// Call function
+	// call function
+	sayHello()
 	fmt.Println("Memanggil fungsi printNumber: ", printNumber())
+}
+
+func sayHello() {
+	fmt.Println("Hello World")
 }
 
 func printNumber() int {
