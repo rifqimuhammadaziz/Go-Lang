@@ -18,6 +18,9 @@ func main() {
 	fmt.Println(person["title"])
 	fmt.Println(len(person))
 
+
+
+	
 	var book map[string]string = make(map[string]string)
 	book["title"] = "Belajar GoLang"
 	book["author"] = "Programmer Zaman Now"
