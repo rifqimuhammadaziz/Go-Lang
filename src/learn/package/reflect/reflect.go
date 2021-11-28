@@ -19,7 +19,7 @@ func IsValid(data interface{}) bool {
 	for i := 0; i < t.NumField(); i++ {
 		field := t.Field(i)
 		if field.Tag.Get("required") == "true" { // if tag 'required' of data struct is 'true'
-			value := reflect.ValueOf(data).Field(i).Interface()
+			value := reflect.ValueOf(data).Field(i).Interface() // or return reflect.ValueOf(data).Field(i).Interface() != ""
 			if value == "" {
 				return false
 			}
